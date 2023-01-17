@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'classic design',
       slug: 'classic-design',
       category: 'Hoodie',
@@ -14,6 +15,7 @@ const data = {
       description: 'super comfy hoodie!',
     },
     {
+      _id: '2',
       name: 'new design',
       slug: 'new-design',
       category: 'Hoodie',
@@ -27,6 +29,7 @@ const data = {
       description: 'super comfy new hoodie!',
     },
     {
+      _id: '3',
       name: 'random shit',
       slug: 'random-shit',
       category: 'T-shirt',
@@ -40,6 +43,7 @@ const data = {
       description: 'super comfy shirt with random shit on it!',
     },
     {
+      _id: '4',
       name: 'random design',
       slug: 'random-design',
       category: 'scarf',
