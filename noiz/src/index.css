@@ -44,6 +44,9 @@ main {
   width: 100%;
   max-width: 400px;
 }
+.navbartop {
+  color: var(--secondary-colour);
+}
 
 .product-info {
   padding: 1rem;
