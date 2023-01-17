@@ -13,21 +13,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-header {
-  background-color: var(--primary-colour);
-  padding: 1rem;
-  font-family: var(--primary-font);
-}
-
-header a {
-  color: var(--secondary-colour);
-  font-weight: bolder;
-  text-decoration: none;
+.site-container {
+  min-height: 100vh;
 }
 
 main {
-  padding: 1rem;
+  flex: 1;
 }
 
 .products {
