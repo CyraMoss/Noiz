@@ -1,4 +1,5 @@
-//import data from '../data';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 import { useReducer, useEffect } from 'react';
 import axios from 'axios';
 import logger from 'use-reducer-logger';
@@ -48,9 +49,9 @@ function HomeScreen() {
       <h1> Featured Products</h1>
       <div className="products">
         {loading ? (
-          <div>Loading...</div>
+          <LoadingBox />
         ) : error ? (
-          <div>{error}</div>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <Row>
             {products.map((product) => (
