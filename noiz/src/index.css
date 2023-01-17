@@ -1,7 +1,7 @@
 :root {
   --secondary-font: 'Fuzzy Bubbles', cursive;
   --primary-font: 'Lemonada', cursive;
-  --primary-colour: #6e6e6e;
+  --primary-colour: rgb(190, 56, 56);
   --secondary-colour: #fff;
 }
 
@@ -21,10 +21,18 @@ main {
   flex: 1;
 }
 
+.btn-primary {
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.rating span {
+  color: var(--primary-colour);
 }
 
 .product {

@@ -8,7 +8,7 @@ const data = {
       price: 59,
       countInStock: 5,
       brand: 'Noiz',
-      rating: 4.5,
+      rating: 1.5,
       color: 'black',
       numReviews: 10,
       description: 'super comfy hoodie!',
