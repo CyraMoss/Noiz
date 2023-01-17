@@ -1,17 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header>
-          <a href="/">NZ Noiz</a>
+          <Link to={'/'}>NZ Noiz</Link>
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<HomeScreen />} />
+            <Route path="/product/:slug" exact element={<ProductScreen />} />
+            <Route path="/" exact element={<HomeScreen />} />
           </Routes>
         </main>
       </div>
