@@ -1,6 +1,6 @@
 {
   "name": "noiz",
-  "proxy": "http://localhost:5003",
+  "proxy": "http://localhost:5003/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
