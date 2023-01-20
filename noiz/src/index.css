@@ -183,7 +183,7 @@ Link {
   color: var(--secondary-colour);
   font-weight: 500;
 }
-.carousesl {
-  interval: 2000;
-  height: 300px;
+.totalcarousel {
+  border: 4px double var(--primary-colour);
+  border-radius: 2%;
 }
