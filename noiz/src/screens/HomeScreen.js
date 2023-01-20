@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
+import Carousel from '../components/Carousel';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -46,6 +47,7 @@ function HomeScreen() {
       <Helmet>
         <title>NZ Noiz</title>
       </Helmet>
+      <Carousel />
       <h1> Featured Products</h1>
       <div className="products">
         {loading ? (

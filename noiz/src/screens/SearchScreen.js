@@ -133,16 +133,17 @@ export default function SearchScreen() {
         <title>Search Products</title>
       </Helmet>
       <Row>
-        <Col md={3}>
-          <h3>Department</h3>
+        <Col className="changeSearch" md={3}>
           <div>
+            <h3>Department</h3>
+            <hr></hr>
             <ul>
               <li>
                 <Link
                   className={'all' === category ? 'text-bold' : ''}
                   to={getFilterUrl({ category: 'all' })}
                 >
-                  Any
+                  <div className="asd">Any</div>
                 </Link>
               </li>
               {categories.map((c) => (
@@ -151,7 +152,7 @@ export default function SearchScreen() {
                     className={c === category ? 'text-bold' : ''}
                     to={getFilterUrl({ category: c })}
                   >
-                    {c}
+                    <div className="asd">{c}</div>
                   </Link>
                 </li>
               ))}
@@ -159,13 +160,14 @@ export default function SearchScreen() {
           </div>
           <div>
             <h3>Price</h3>
+            <hr></hr>
             <ul>
               <li>
                 <Link
                   className={'all' === price ? 'text-bold' : ''}
                   to={getFilterUrl({ price: 'all' })}
                 >
-                  Any
+                  <div className="asd">Any</div>
                 </Link>
               </li>
               {prices.map((p) => (
@@ -174,7 +176,7 @@ export default function SearchScreen() {
                     to={getFilterUrl({ price: p.value })}
                     className={p.value === price ? 'text-bold' : ''}
                   >
-                    {p.name}
+                    <div className="asd">{p.name}</div>
                   </Link>
                 </li>
               ))}
@@ -182,6 +184,7 @@ export default function SearchScreen() {
           </div>
           <div>
             <h3>Avg. Customer Review</h3>
+            <hr></hr>
             <ul>
               {ratings.map((r) => (
                 <li key={r.name}>

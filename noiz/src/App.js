@@ -159,7 +159,7 @@ function App() {
                   to={`/search?category=${category}`}
                   onClick={() => setSidebarIsOpen(false)}
                 >
-                  <Nav.Link>{category}</Nav.Link>
+                  <Nav.Link className="asdf">{category}</Nav.Link>
                 </Link>
               </Nav.Item>
             ))}
