@@ -22,9 +22,6 @@ body {
 .small-container {
   max-width: 600px;
 }
-a {
-  text-decoration: none;
-}
 
 main {
   flex: 1;
