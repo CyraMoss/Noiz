@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:frontend": "cd noiz && npm update && npm install --force && npm run build",
-"build:backend": "cd backend && npm install",
+      "build": "cd backend && npm install  && cd ../noiz && npm install --force && npm run build",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
