@@ -1,5 +1,5 @@
 import http from 'http';
-import SocketIO from 'socket.io';
+import { Server } from "socket.io";
 import express from 'express';
 import path from 'path';
 import mongoose from 'mongoose';
@@ -52,7 +52,7 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 5003;
 
 const httpServer = http.Server(app);
-const io = SocketIO(httpServer);
+const io = new Server(httpServer);
 const users = [];
 
 io.on('connection', (socket) => {
